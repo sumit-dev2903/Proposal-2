@@ -99,17 +99,19 @@ document.getElementById("secretBtn").addEventListener("click", () => {
       : "Open the secret letter ♡";
 });
 
+
 document.getElementById("yesBtn").addEventListener("click", () => {
   document.getElementById("answerMessage").textContent =
-    "That made this little surprise even more special. Thank you, Lovely! ♡";
-  showToast("A new happy page begins ♡");
-  createHearts(22);
+    "You just made this moment unforgettable, Lovely! ♡ Thank you for giving this story a chance. — Sumit";
+
+  createHearts(35);
 });
 
 document.getElementById("timeBtn").addEventListener("click", () => {
   document.getElementById("answerMessage").textContent =
-    "Of course. Take all the time you need. Your answer matters, Lovely. ♡";
+    "Take your time, Lovely. No pressure at all. Your feelings matter. ♡";
 });
+
 
 const music = document.getElementById("music");
 const musicBtn = document.getElementById("musicBtn");
