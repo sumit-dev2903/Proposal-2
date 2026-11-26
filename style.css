@@ -242,3 +242,163 @@ footer strong { color: var(--deep); }
   .from { font-size: .58rem; }
 }
 
+.proposal-section {
+  min-height: 100vh;
+  padding: 75px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 15% 15%, #f9d9e8, transparent 40%),
+    radial-gradient(circle at 85% 85%, #ded2f4, transparent 40%);
+  border-top: 0;
+}
+
+.proposal-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 680px;
+  padding: 55px 35px;
+  text-align: center;
+  background: #fffdfb;
+  border: 1px solid #f0d4e2;
+  border-radius: 28px;
+  box-shadow: 0 25px 80px #a46d9226;
+}
+
+.proposal-card::before,
+.proposal-card::after {
+  content: "✿";
+  position: absolute;
+  color: #f1d6e5;
+  font-size: 95px;
+  opacity: .5;
+}
+
+.proposal-card::before {
+  top: -25px;
+  left: -15px;
+}
+
+.proposal-card::after {
+  bottom: -30px;
+  right: -10px;
+}
+
+.proposal-decoration {
+  color: #c78bac;
+  letter-spacing: 7px;
+  margin-bottom: 25px;
+}
+
+.proposal-heart {
+  font-size: 65px;
+  color: #d879a2;
+  animation: heartbeat 1.4s infinite;
+  margin-bottom: 20px;
+}
+
+.proposal-card h2 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #76516d;
+  margin: 15px 0;
+}
+
+.proposal-divider {
+  color: #d879a2;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.proposal-letter {
+  max-width: 480px;
+  margin: auto;
+  color: #8b7584;
+  line-height: 2;
+  font-size: .9rem;
+}
+
+.big-question {
+  color: #c66f98;
+  font-size: clamp(2.8rem, 9vw, 4.5rem);
+  margin: 30px 0 12px;
+  line-height: 1.2;
+}
+
+.proposal-subtitle {
+  color: #9a8293;
+  font-size: .82rem;
+  line-height: 1.8;
+}
+
+.proposal-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.yes-proposal,
+.think-proposal {
+  border: 0;
+  border-radius: 50px;
+  padding: 15px 32px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.yes-proposal {
+  color: white;
+  background: linear-gradient(120deg, #dc7ca4, #a58ac9);
+  box-shadow: 0 10px 25px #cf85a644;
+}
+
+.yes-proposal:hover {
+  transform: translateY(-4px) scale(1.04);
+}
+
+.think-proposal {
+  color: #805c78;
+  background: #f5eaf2;
+  border: 1px solid #e9d3e2;
+}
+
+.think-proposal:hover {
+  background: #eddfeb;
+}
+
+.proposal-footer {
+  margin-top: 45px;
+  color: #ae91a4;
+  font-size: .75rem;
+  line-height: 2;
+}
+
+.proposal-footer strong {
+  color: #80516f;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+}
+
+.answer-message {
+  position: relative;
+  z-index: 2;
+  color: #9b557e;
+  font-size: .9rem;
+  line-height: 1.8;
+}
+
+@media(max-width: 500px) {
+  .proposal-card {
+    padding: 42px 20px;
+  }
+
+  .proposal-letter {
+    font-size: .82rem;
+  }
+}
+
