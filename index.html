@@ -4,140 +4,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For Lovely ♡ | From Sumit</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>For Lovely ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient"></div>
-  <div class="music-control">
-    <button id="musicBtn" aria-label="Toggle music">♫ <span>Music</span></button>
-    <audio id="music" loop>
-      <source src="music.mp3" type="audio/mpeg">
-    </audio>
-  </div>
 
-  <main>
-    <section class="welcome screen active" id="welcome">
-      <div class="tiny-label">A LITTLE SOMETHING FOR YOU</div>
-      <div class="envelope-wrap" id="envelope">
-        <div class="envelope">
-          <div class="envelope-flap"></div>
-          <div class="letter"><span>♡</span><small>For Lovely</small></div>
-          <div class="envelope-front">♡</div>
-        </div>
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- Opening screen -->
+  <section class="opening" id="opening">
+    <div class="intro-text">A SPECIAL LETTER FOR SOMEONE SPECIAL</div>
+
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="letter">
+        <span>♡</span>
+        <p>For Lovely</p>
       </div>
-      <p class="eyebrow">A message from Sumit</p>
-      <h1>Hey, Lovely<span class="pink">.</span></h1>
-      <p class="subtext">I made a little corner of the internet just for you.</p>
-      <button class="primary-btn" id="openBtn">Open your little surprise <span>→</span></button>
-      <p class="hint">tap the envelope to begin</p>
-    </section>
-
-    <section class="diary screen" id="diary">
-      <header class="topbar">
-        <span class="brand">♡ OUR LITTLE STORY</span>
-        <span class="from">SUMIT → LOVELY</span>
-      </header>
-
-      <div class="diary-heading">
-        <p class="eyebrow">A FEW WORDS FROM MY HEART</p>
-        <h2>Dear Lovely,</h2>
-        <p class="subtext">Some feelings deserve their own pages.</p>
-      </div>
-
-      <article class="page-card">
-        <div class="page-number" id="pageNumber">01 / 06</div>
-        <div class="chapter-tag" id="chapterTag">CHAPTER ONE</div>
-        <h3 id="pageTitle">A little hello</h3>
-        <p class="page-copy" id="pageCopy"></p>
-        <div class="page-decoration">✧　♡　✧</div>
-        <div class="page-controls">
-          <button class="secondary-btn" id="prevBtn">← Back</button>
-          <button class="primary-btn" id="nextBtn">Next page →</button>
-        </div>
-      </article>
-
-      <div class="progress-dots" id="dots"></div>
-
-      <section class="memory-section">
-        <p class="eyebrow">LITTLE MOMENTS</p>
-        <h2>A page for memories</h2>
-        <p class="subtext">One day, these spaces can hold our favourite pictures.</p>
-        <div class="memory-grid">
-          <div class="memory-card"><span>♡</span><p>Our favourite memory</p><small>Add a photo in the Image folder</small></div>
-          <div class="memory-card"><span>✿</span><p>A moment to remember</p><small>Add another special photo</small></div>
-          <div class="memory-card"><span>✧</span><p>More memories ahead</p><small>There is room for many more</small></div>
-        </div>
-      </section>
-
-      <section class="secret-section">
-        <p class="eyebrow">PSSST... A LITTLE SECRET</p>
-        <h2>There's a letter for you</h2>
-        <button class="secret-btn" id="secretBtn">Open the secret letter ♡</button>
-        <div class="secret-letter" id="secretLetter">
-          <p>Lovely,</p>
-          <p>Never forget that you deserve kindness, happiness, and all the beautiful things life has to offer. Keep being yourself. That's what makes you special.</p>
-          <p class="signature">— Sumit ♡</p>
-        </div>
-      </section>
-
-      
-<section class="proposal-section" id="proposal">
-  <div class="proposal-card">
-    <div class="proposal-decoration">✦　♡　✦</div>
-    <div class="proposal-heart">♥</div>
-
-    <p class="eyebrow">ONE LAST THING, LOVELY...</p>
-
-    <h2>I've got something to ask you.</h2>
-
-    <div class="proposal-divider">♡</div>
-
-    <p class="proposal-letter">
-      Dear Lovely,<br><br>
-      After all these pages, there's one thing I still want to say.
-      You are someone truly special to me, and I would love to make
-      more beautiful memories with you.<br><br>
-      So, today, I want to ask you something from my heart...
-    </p>
-
-    <h1 class="big-question">
-      Will You Be Mine?
-    </h1>
-
-    <p class="proposal-subtitle">
-      Will you give us a chance to write a beautiful story together?
-    </p>
-
-    <div class="proposal-buttons">
-      <button class="yes-proposal" id="yesBtn">
-        YES! ♡
-      </button>
-
-      <button class="think-proposal" id="timeBtn">
-        Let me think
-      </button>
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-heart">♥</div>
     </div>
 
-    <p class="answer-message" id="answerMessage" aria-live="polite"></p>
+    <h1>Hey, Lovely! ❤️</h1>
+    <p class="opening-subtitle">I have something special to tell you...</p>
+    <button class="open-button" id="openButton">Open My Letter ♡</button>
+    <p class="tap-note">A little surprise made just for you</p>
+  </section>
 
-    <div class="proposal-footer">
-      Made with love and a little courage<br>
-      <strong>Forever yours, Sumit ♡</strong>
+  <!-- Diary -->
+  <main class="diary hidden" id="diary">
+
+    <header class="diary-header">
+      <div class="logo">♡ OUR LITTLE DIARY</div>
+      <div class="header-name">SUMIT × LOVELY</div>
+    </header>
+
+    <div class="diary-title">
+      <p class="small-heading">A COLLECTION OF MY FEELINGS</p>
+      <h2>Dear Lovely,</h2>
+      <p>There are some things I wanted to tell you...</p>
     </div>
-  </div>
-</section>
-        
-      <footer>
-        Made with care by <strong>Sumit</strong> for <strong>Lovely</strong> ♡
-        <p>One little website, a thousand little feelings.</p>
-      </footer>
+
+    <div class="book">
+      <div class="book-top">
+        <span id="chapterNumber">PAGE 01</span>
+        <span>♡</span>
+      </div>
+
+      <div class="book-content">
+        <div class="chapter-label" id="chapterLabel">CHAPTER ONE</div>
+        <h2 id="chapterTitle">A little beginning</h2>
+        <p id="chapterText"></p>
+      </div>
+
+      <div class="book-bottom">
+        <button id="previousButton" class="page-button">← Previous</button>
+        <span id="pageCount">1 / 10</span>
+        <button id="nextButton" class="page-button">Next →</button>
+      </div>
+    </div>
+
+    <div class="chapter-dots" id="chapterDots"></div>
+
+    <!-- Special memories -->
+    <section class="memories">
+      <p class="small-heading">LITTLE THINGS THAT MATTER</p>
+      <h2>Our Memory Corner ♡</h2>
+      <p class="section-subtitle">A place for all the beautiful moments.</p>
+
+      <div class="memory-grid">
+        <div class="memory-box">
+          <span>🌷</span>
+          <h3>Beautiful Moments</h3>
+          <p>Every little moment deserves a place here.</p>
+        </div>
+        <div class="memory-box">
+          <span>💌</span>
+          <h3>Sweet Conversations</h3>
+          <p>Some conversations stay in the heart.</p>
+        </div>
+        <div class="memory-box">
+          <span>✨</span>
+          <h3>More To Come</h3>
+          <p>The best memories are still waiting for us.</p>
+        </div>
+      </div>
     </section>
+
+    <!-- Secret message -->
+    <section class="secret-section">
+      <p class="small-heading">JUST FOR YOU</p>
+      <h2>A Secret Message 💌</h2>
+      <p class="section-subtitle">There is something hidden here...</p>
+      <button id="secretButton" class="secret-button">Unlock My Message ♡</button>
+
+      <div class="secret-message hidden" id="secretMessage">
+        <h3>Dear Lovely,</h3>
+        <p>
+          I don't know how to explain everything perfectly,
+          but I want you to know that you are special.
+          I hope you always keep smiling, chasing your dreams
+          and being the wonderful person you are.
+        </p>
+        <p class="signature">With love, Sumit ❤️</p>
+      </div>
+    </section>
+
+    <!-- FINAL PROPOSAL PAGE -->
+    <section class="proposal-page" id="proposalPage">
+      <div class="proposal-content">
+        <div class="proposal-top-heart">♡</div>
+        <p class="small-heading">THE LAST PAGE OF THIS LITTLE DIARY</p>
+
+        <h2>One Last Question,<br>Lovely...</h2>
+
+        <div class="big-heart">❤️</div>
+
+        <p class="proposal-message">
+          From the very first hello to all the little conversations,
+          I have come to realise that you are someone really special to me.
+          <br><br>
+          I don't promise a perfect story, but I would love to create
+          beautiful memories, share laughter and make every little moment count.
+          <br><br>
+          So, with all my heart, I want to ask you...
+        </p>
+
+        <h1 class="proposal-question">Will You Be Mine?</h1>
+
+        <p class="proposal-caption">I'd love to write the next chapter with you. ♡</p>
+
+        <div class="proposal-actions">
+          <button id="yesButton" class="yes-button">YES! ❤️</button>
+          <button id="thinkButton" class="think-button">I need some time</button>
+        </div>
+
+        <div id="proposalAnswer" class="proposal-answer"></div>
+
+        <div class="proposal-signature">
+          <p>Forever with warm wishes,</p>
+          <h3>Sumit ♡</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ by Sumit</p>
+      <p>Especially for Lovely</p>
+    </footer>
+
   </main>
 
-  <div class="toast" id="toast">A little happiness sent your way ♡</div>
   <script src="script.js"></script>
 </body>
 </html>
